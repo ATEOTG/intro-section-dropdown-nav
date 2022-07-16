@@ -28,7 +28,13 @@ body {
 }
 
 .container {
-  max-width: 140rem;
+  max-width: 100rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+
+.mobile {
+  display: none;
+}
+
+/* NAV SECTION */
