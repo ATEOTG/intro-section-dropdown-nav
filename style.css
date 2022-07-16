@@ -26,3 +26,9 @@ body {
   font-size: 1.8rem;
   font-family: "Epilogue", sans-serif;
 }
+
+.container {
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
