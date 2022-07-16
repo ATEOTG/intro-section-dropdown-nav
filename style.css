@@ -1,0 +1,28 @@
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+/* GENERAL */
+:root {
+  --white: hsl(0, 0%, 98%);
+  --grey-md: hsl(0, 0%, 41%);
+  --black: hsl(0, 0%, 8%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Epilogue", sans-serif;
+}
