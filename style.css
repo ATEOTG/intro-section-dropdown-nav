@@ -28,8 +28,8 @@ body {
 }
 
 .container {
+  width: 90%;
   max-width: 100rem;
-  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
@@ -38,3 +38,82 @@ body {
 }
 
 /* NAV SECTION */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 3em 9em 3em;
+  color: var(--grey-md);
+}
+
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  gap: 3em;
+}
+
+.header-right {
+  gap: 3em;
+}
+
+.nav-lists {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+.nav-list {
+  transition: all 0.3s;
+}
+
+.nav-list:last-child:hover {
+  color: var(--black);
+  cursor: pointer;
+}
+
+.nav-drop:link,
+.nav-drop:visited {
+  text-decoration: none;
+  color: var(--grey-md);
+  transition: all 0.3s;
+}
+.nav-drop:hover,
+.nav-drop:active {
+  color: var(--black);
+}
+
+.nav-drop path {
+  transition: all 0.3s;
+}
+.nav-drop:hover path {
+  stroke: var(--black);
+}
+
+.login {
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.login:hover {
+  color: var(--black);
+  cursor: pointer;
+}
+
+.btn-header {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+  color: var(--grey-md);
+  background-color: var(--white);
+  padding: 0.6em 1.3em;
+  border: 2px solid var(--grey-md);
+  border-radius: 0.8em;
+  transition: all 0.3s;
+}
+.btn-header:hover {
+  color: var(--black);
+  border: 2px solid var(--black);
+  cursor: pointer;
+}
