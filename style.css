@@ -125,7 +125,7 @@ body {
   padding: 1.2em 1.2em;
   min-width: 9em;
   border-radius: 1rem;
-  box-shadow: 0.1rem 0.1rem 220rem 0.1rem;
+  box-shadow: 0.1rem 0.1rem 150rem 0.1rem;
   right: 0;
   top: 25px;
 }
@@ -144,6 +144,33 @@ body {
 }
 
 .feature-menu:hover .dropdown-menu {
+  display: flex;
+}
+
+.company-menu {
+  position: relative;
+}
+
+.dropdown-menu-company {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+
+  gap: 1em;
+  padding: 1.2em 1.3em;
+  min-width: 7.5em;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 150rem 0.1rem;
+  right: 0;
+  top: 25px;
+}
+
+.dropdown-menu-company a {
+  text-decoration: none;
+  color: var(--grey-md);
+}
+
+.company-menu:hover .dropdown-menu-company {
   display: flex;
 }
 
