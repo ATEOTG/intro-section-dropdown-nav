@@ -29,7 +29,7 @@ body {
 
 .container {
   width: 90%;
-  max-width: 100rem;
+  max-width: 115rem;
   margin: 0 auto;
 }
 
@@ -116,4 +116,18 @@ body {
   color: var(--black);
   border: 2px solid var(--black);
   cursor: pointer;
+}
+
+/* HERO SECTION */
+.hero {
+  display: grid;
+  grid-template-columns: 55fr 50fr;
+  margin-bottom: 6em;
+}
+
+.main-img {
+  width: 100%;
+
+  grid-column: 2/-2;
+  grid-row: 1/3;
 }
