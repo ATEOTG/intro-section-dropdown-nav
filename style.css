@@ -121,7 +121,8 @@ body {
 /* HERO SECTION */
 .hero {
   display: grid;
-  grid-template-columns: 55fr 50fr;
+  grid-template-columns: 52fr 48fr;
+  column-gap: 7em;
   margin-bottom: 6em;
 }
 
@@ -130,4 +131,48 @@ body {
 
   grid-column: 2/-2;
   grid-row: 1/3;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.primary-heading {
+  font-size: 8rem;
+  color: var(--black);
+  margin-bottom: 0.8em;
+}
+
+.desc {
+  font-size: 1.8rem;
+  color: var(--grey-md);
+  line-height: 1.5;
+  margin-bottom: 3em;
+  width: 80%;
+}
+
+.btn {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.8rem;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 1em 1.7em;
+  border: 1px solid var(--black);
+  border-radius: 0.8em;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.main-sp {
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
 }
