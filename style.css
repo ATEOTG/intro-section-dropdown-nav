@@ -113,6 +113,40 @@ body {
   cursor: pointer;
 }
 
+.feature-menu {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.2em 1.2em;
+  min-width: 9em;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 220rem 0.1rem;
+  right: 0;
+  top: 25px;
+}
+
+.dropdown-menu svg {
+  width: 16px;
+  height: 16px;
+}
+
+.dropdown-items:link,
+.dropdown-items:visited {
+  display: flex;
+  gap: 1em;
+  text-decoration: none;
+  color: var(--grey-md);
+}
+
+.feature-menu:hover .dropdown-menu {
+  display: flex;
+}
+
 /* HERO SECTION */
 .hero {
   display: grid;

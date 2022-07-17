@@ -30,10 +30,3 @@ company.addEventListener("mouseout", function () {
   iconUp2.style.display = "none";
   iconDown2.style.display = "inline-block";
 });
-
-// navDrop.forEach(function (value) {
-//   value.addEventListener("mouseover", function () {
-//     iconDown.style.display = "none";
-//     iconUp.style.display = "inline-block";
-//   });
-// });
