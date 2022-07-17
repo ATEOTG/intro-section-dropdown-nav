@@ -118,7 +118,9 @@ body {
 }
 
 .dropdown-menu {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
   background-color: var(--white);
   position: absolute;
   flex-direction: column;
@@ -129,6 +131,7 @@ body {
   box-shadow: 0.1rem 0.1rem 150rem 0.1rem;
   right: 0;
   top: 25px;
+  transition: all 0.2s;
 }
 
 .dropdown-menu svg {
@@ -145,7 +148,8 @@ body {
 }
 
 .feature-menu:hover .dropdown-menu {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .company-menu {
@@ -153,7 +157,10 @@ body {
 }
 
 .dropdown-menu-company {
-  display: none;
+  /* display: none; */
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
   background-color: var(--white);
   position: absolute;
   flex-direction: column;
@@ -165,6 +172,7 @@ body {
   box-shadow: 0.1rem 0.1rem 150rem 0.1rem;
   right: 0;
   top: 25px;
+  transition: all 0.2s;
 }
 
 .dropdown-menu-company a {
@@ -173,7 +181,8 @@ body {
 }
 
 .company-menu:hover .dropdown-menu-company {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* HERO SECTION */
