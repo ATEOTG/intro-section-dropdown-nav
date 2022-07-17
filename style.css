@@ -119,6 +119,7 @@ body {
 
 .dropdown-menu {
   display: none;
+  background-color: var(--white);
   position: absolute;
   flex-direction: column;
   gap: 1em;
@@ -153,6 +154,7 @@ body {
 
 .dropdown-menu-company {
   display: none;
+  background-color: var(--white);
   position: absolute;
   flex-direction: column;
 
@@ -231,5 +233,3 @@ body {
   align-items: flex-end;
   gap: 2em;
 }
-
-/* Displays SECTION */
