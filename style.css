@@ -41,7 +41,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 2em 3em 9em 3em;
+  margin: 2em 3em 3em 3em;
   color: var(--grey-md);
 }
 
