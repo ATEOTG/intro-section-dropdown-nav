@@ -1,7 +1,6 @@
 "use strict";
 // selecting elements
-const features = document.querySelector(".features");
-const company = document.querySelector(".company");
+const darkWrap = document.querySelector(".dark-wrap");
 
 const iconDown1 = document.querySelector(".icon-down1");
 const iconUp1 = document.querySelector(".icon-up1");
@@ -23,17 +22,14 @@ btnMobile.addEventListener("click", function (e) {
     btnMenu.classList.add("open");
     btnClose.classList.add("open");
     mainNav.classList.add("open");
+    darkWrap.classList.add("open");
   } else {
     btnMenu.classList.remove("open");
     btnClose.classList.remove("open");
     mainNav.classList.remove("open");
+    darkWrap.classList.remove("open");
   }
 });
-
-featMenu.addEventListener("mouseover", function (e) {
-  e.preventDefault();
-});
-
 // TOUCH MOBILE
 // open dropdown menu on click
 featMenu.addEventListener("click", function (e) {
@@ -72,17 +68,14 @@ comMenu.addEventListener("click", function () {
   }
 });
 
-// features.addEventListener("mouseout", function () {
-//   iconUp1.style.display = "none";
-//   iconDown1.style.display = "inline-block";
-// });
-
-// company.addEventListener("mouseover", function () {
-//   iconDown2.style.display = "none";
-//   iconUp2.style.display = "inline-block";
-// });
-
-// company.addEventListener("mouseout", function () {
-//   iconUp2.style.display = "none";
-//   iconDown2.style.display = "inline-block";
-// });
+// problems occur when we have the mobile nav menu open while changing sizes
+// to prevent this, remove the open class once we get out of mobile version
+window.addEventListener("resize", function () {
+  const viewport_width = window.innerWidth;
+  if (viewport_width >= 705) {
+    btnMenu.classList.remove("open");
+    btnClose.classList.remove("open");
+    mainNav.classList.remove("open");
+    darkWrap.classList.remove("open");
+  }
+});
