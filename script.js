@@ -14,6 +14,9 @@ const btnMobile = document.querySelector(".btn-mobile-nav");
 const btnMenu = document.querySelector(".menu");
 const btnClose = document.querySelector(".close");
 
+const featMenu = document.querySelector(".feature-menu");
+const comMenu = document.querySelector(".company-menu");
+
 // event listener
 btnMobile.addEventListener("click", function (e) {
   if (!btnMenu.classList.contains("open")) {
@@ -27,10 +30,47 @@ btnMobile.addEventListener("click", function (e) {
   }
 });
 
-// features.addEventListener("mouseover", function () {
-//   iconDown1.style.display = "none";
-//   iconUp1.style.display = "inline-block";
-// });
+featMenu.addEventListener("mouseover", function (e) {
+  e.preventDefault();
+});
+
+// TOUCH MOBILE
+// open dropdown menu on click
+featMenu.addEventListener("click", function (e) {
+  if (!featMenu.classList.contains("open-flex")) {
+    featMenu.classList.add("open-flex");
+  } else {
+    featMenu.classList.remove("open-flex");
+  }
+});
+
+comMenu.addEventListener("click", function (e) {
+  if (!comMenu.classList.contains("open-flex")) {
+    comMenu.classList.add("open-flex");
+  } else {
+    comMenu.classList.remove("open-flex");
+  }
+});
+
+// for arrow icon
+featMenu.addEventListener("click", function () {
+  if (iconUp1.style.display === "inline-block") {
+    iconDown1.style.display = "inline-block";
+    iconUp1.style.display = "none";
+  } else {
+    iconDown1.style.display = "none";
+    iconUp1.style.display = "inline-block";
+  }
+});
+comMenu.addEventListener("click", function () {
+  if (iconUp2.style.display === "inline-block") {
+    iconDown2.style.display = "inline-block";
+    iconUp2.style.display = "none";
+  } else {
+    iconDown2.style.display = "none";
+    iconUp2.style.display = "inline-block";
+  }
+});
 
 // features.addEventListener("mouseout", function () {
 //   iconUp1.style.display = "none";
