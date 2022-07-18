@@ -364,6 +364,26 @@ body {
     font-size: 2rem;
   }
 
+  .header {
+    margin: 2em 1em 3em 1em;
+  }
+
+  .primary-heading {
+    font-size: 4rem;
+  }
+
+  .desc {
+    text-align: center;
+  }
+
+  .main-sp {
+    align-items: center;
+  }
+
+  .sp-image {
+    width: 40%;
+  }
+
   /* mobile nav */
   .main-nav {
     position: absolute;
